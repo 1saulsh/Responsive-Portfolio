@@ -1,0 +1,247 @@
+body {
+	background: url("../images/intersection.png");
+	font-family: Arial, Helvetica, sans-serif;
+	width:960px;
+	line-height: 34px;
+	color: #777;
+	font-size: 18px;
+}
+*{
+	box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;  
+	clear: both;
+}
+h1,h2,desc,p{
+	margin-bottom: 20px;
+}
+p:last-child {
+	margin-bottom: 0;
+  }
+h1,h2,desc {
+	font-weight:700;
+	color: white;
+	border-bottom: #777;
+	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+h1{
+	padding-bottom: 20px;
+	font-size: 30px;
+	line-height: 49px;
+	border-bottom: 3px solid #ddd;
+}
+h2, desc{
+	font-size: 22px;
+}
+#major-container {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	margin: 0 0 30px;
+	overflow: auto;
+	color: #fff;
+	background: #fff;
+	border-bottom: 2px solid #ccc;
+}
+#header{
+	float: left;
+	width: 250px;
+	height: 90px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 90px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background: #4aaaa5;
+}
+#navbar ul {
+	float: right;
+    background-color: #4aaaa5;
+    margin-top: 25px;
+	list-style-type: none;
+	border-radius: 5px;
+}
+#navbar ul li {
+	display: inline;
+}
+#navbar ul li a {
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 15px;
+	margin-left: 15px;
+	line-height: 18px;
+	color:white;
+	background-color:#4aaaa5;
+}
+#navbar ul li a:hover {
+	background-color:grey;
+	color: black;
+}
+
+.main-container {
+	padding-top: 130px;
+}
+
+img {
+	float: left;
+
+}
+.main-section {
+	background-color: #ffffff;
+	width: 100%;
+	max-width:650px;
+	border: 1px solid #ddd;
+	padding: 20px;
+	float: left;
+	color: #777777;
+	margin: 150px 0 20px 40px;		
+}
+
+.sidebar {
+	position: relative;
+	max-width: 270px;
+	background-color: white;
+	margin-left:-270px;
+	color: #4aaaa5;
+	border: 1px solid #4aaaa5;
+	padding: 20px;
+	float: right;
+	overflow: hidden;
+	width: 100%;
+
+
+}
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+	width: 62px;
+	height: 62px;
+	margin-top: 8px;
+	margin-right: 5px;
+  }
+  .social:last-child {
+	margin-right: 0;
+  }
+footer {
+	padding: 30px 0;
+	background:grey;
+	border-top: 8px solid #4aaaa5;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	font-family: Cambria, Cochin, Georgia, Times, Times,New Roman, serif;
+	clear: both;				
+}
+/*contact page*/
+
+#contact-form ul {
+	margin-bottom: 20px;
+  }
+  #contact-form li {
+	margin-bottom: 10px;
+  }
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+	display: block;
+	width: 100%;
+  }
+  input[type=text],
+  input[type=email],
+  textarea {
+	height: 35px;
+	padding: 0 10px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+  }
+  textarea {
+	height: 200px;
+  }
+  input[type=submit] {
+	padding: 10px 30px;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	background: #4aaaa5;
+	border: 0 none;
+  }
+/* Portfolio Page */
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.gallery {	  
+	position: relative;
+	float: left;
+	width: 274px;
+	margin: 25px 0 25px;
+	overflow: auto;
+}	
+.gallery:nth-child(even) {
+	margin-right: 40px;
+  }
+  .gallery img {
+	width: 100%;
+	border: 0 none;
+	opacity: 0.8;
+  }
+  .gallery desc {
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	max-width: 600px;
+	padding: 15px;
+	margin-bottom: 0;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+	background: #4aaaa5;
+	border-bottom: 0;
+  } 
+
+		
+	@media screen and (max-width: 640px) {
+    .sidebar {width: 100px;}
+    .navbar ul {margin-left: 216px;}
+		[class*="col-"] {width: 100%;}
+		.gallery{
+			width: 100%;
+			padding: 5px 20px;
+			float: none;
+	}
+
+	@media screen and (max-width: 760px) {
+			.sidebar {width: 200px;}
+			.navbar ul {margin-left: 216px;}
+			[class*="col-"] {width: 100%;}
+		}
+
+	@media screen and (max-width: 980px) {
+				.navbar ul {margin-left: 216px;}
+				[class*="col-"] {width: 100%;}
+	}
+
+	@media only screen and (max-width: 760px) {
+    .sidebar {display:table;}
+    .content {display:table-footer-group; float: none;}
+    .sidebar {display:table-header-group; float: none;}
+}
+	@media (min-width: 640px) {
+		.main-container {
+			grid-template-columns: 1fr;}
+	}

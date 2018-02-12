@@ -1,0 +1,40 @@
+body
+{
+    margin:0px;
+
+}
+#container
+{
+    width:400px;
+    margin: 0px auto;
+
+}
+/* Header section=====*/
+.Header
+{background:#5c755e;
+height:75px;
+width:336px;
+border:solid 2px #000;
+color: navy;
+}
+.sidebar
+{display:none;
+}
+#nav
+{
+    display:none;
+
+}
+.margin{
+    float:left;
+    width:394px;
+    height:700px;
+    background: #e5e4d7;
+    border-right: solid 2px #000;
+    border-left: solid 2px #000;
+    border-bottom: solid 2px #000;
+    font-family: Arial;
+    font-size: 16px;
+    overflow:auto;
+    
+}
